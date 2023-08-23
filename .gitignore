@@ -1,0 +1,15 @@
+node_modules
+.env
+
+static/cursos.scss
+static/cursos.css.map
+static/dadosPessoais.scss
+static/dadosPessoais.css.map
+static/habilidades.scss
+static/habilidades.css.map
+static/header.scss
+static/header.css.map
+static/landingPage.scss
+static/landingPage.css.map
+static/main.scss
+static/main.css.map
