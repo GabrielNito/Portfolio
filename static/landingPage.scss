@@ -75,6 +75,12 @@
       width: 100%;
       animation: apareso 1s ease;
     }
+    a {
+      display: flex;
+      width: 100%;
+      justify-content: end;
+      color: var(--txt1);
+    }
   }
 }
 

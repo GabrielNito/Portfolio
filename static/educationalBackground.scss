@@ -1,11 +1,11 @@
-.faculdade {
+.educational_background {
   width: 100%;
   height: fit-content;
   display: flex;
 
   justify-content: center;
 
-  .faculdade_container {
+  .eb_container {
     width: 100%;
     h2 {
       margin-top: 10vh;
@@ -31,10 +31,10 @@
 }
 
 @media (max-width: 1150px) {
-  .faculdade {
+  .educational_background {
     overflow-x: hidden;
 
-    .faculdade_container {
+    .eb_container {
       h2 {
         font-size: 3rem;
       }
@@ -45,10 +45,10 @@
   }
 }
 @media (max-width: 712px) {
-  .faculdade {
+  .educational_background {
     overflow-x: hidden;
 
-    .faculdade_container {
+    .eb_container {
       h2 {
         font-size: 3rem;
       }

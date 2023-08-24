@@ -1,4 +1,4 @@
-.cursos {
+.courses {
   width: 100%;
   position: relative;
   overflow-y: hidden;
@@ -12,14 +12,14 @@
     margin-bottom: 30px;
   }
 
-  .cursos_container {
+  .courses_container {
     display: flex;
     margin: 0 5rem;
     gap: 15px;
     width: auto;
     justify-content: space-evenly;
 
-    .cursos_obj {
+    .courses_obj {
       padding: 1.5rem;
       flex: 1;
       border-radius: 2rem;
@@ -51,7 +51,7 @@
         font-weight: 500;
       }
 
-      .cursos_img {
+      .courses_img {
         scale: 1 / 1;
         position: relative;
         margin: 10px;
@@ -67,10 +67,10 @@
       }
     }
 
-    .cursos_obj:nth-child(1),
-    .cursos_obj:nth-child(2),
-    .cursos_obj:nth-child(3),
-    .cursos_obj:nth-child(4) {
+    .courses_obj:nth-child(1),
+    .courses_obj:nth-child(2),
+    .courses_obj:nth-child(3),
+    .courses_obj:nth-child(4) {
       transition-delay: 0.2s;
     }
 
@@ -88,31 +88,29 @@
 }
 
 @media (max-width: 1150px) {
-  // something's in the way
-  .cursos {
+  .courses {
     overflow-x: hidden;
     h2 {
       font-size: 3rem;
     }
-    .cursos_container {
+    .courses_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
 
-      .cursos_obj {
+      .courses_obj {
         width: 100%;
       }
     }
   }
 }
 @media (max-width: 712px) {
-  // something's in the way²
-  .cursos {
+  .courses {
     overflow-x: hidden;
-    .cursos_container {
+    .courses_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
 
-      .cursos_obj {
+      .courses_obj {
         width: 100%;
         min-height: 300px;
 

@@ -1,5 +1,4 @@
-.habilidades_container {
-  // display: flex;
+.skills {
   height: fit-content;
   gap: 30px;
 
@@ -165,7 +164,7 @@
 }
 
 @media (max-width: 1100px) {
-  .habilidades_container {
+  .skills {
     h2 {
       font-size: 3rem;
     }
