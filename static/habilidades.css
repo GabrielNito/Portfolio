@@ -1,5 +1,6 @@
 .habilidades_container {
-  height: 100svh;
+  height: -moz-fit-content;
+  height: fit-content;
   gap: 30px;
 }
 .habilidades_container h2 {
@@ -28,11 +29,21 @@
   width: 100%;
   justify-content: center;
   font-size: 3rem;
-  margin: 20px 20px 40px 20px;
+  margin: 20px 20px 20px 20px;
   color: var(--txt1);
+}
+.habilidades_container .skills_container .frontend_container .front_end_title i {
+  position: relative;
+  top: 12px;
+  right: 10px;
 }
 .habilidades_container .skills_container .frontend_container .front_end_item {
   display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  min-width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
   list-style-type: none;
   padding: 1.5rem;
   text-align: center;
@@ -41,13 +52,17 @@
   border-color: var(--txt1);
 }
 .habilidades_container .skills_container .frontend_container .front_end_item i {
-  width: 100%;
-  margin-right: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  left: 5%;
   color: var(--txt1);
   font-size: 1.5rem;
   transform: translateY(4px);
 }
 .habilidades_container .skills_container .frontend_container .front_end_item h5 {
+  position: relative;
+  right: 5%;
   color: var(--txt1);
   font-size: 1.5rem;
 }
@@ -74,10 +89,12 @@
   flex-wrap: wrap;
   gap: 15px;
   width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 1.5rem;
   flex: 1;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .habilidades_container .learning_container .learning_title {
   display: flex;
@@ -90,10 +107,17 @@
   height: min-content;
 }
 .habilidades_container .learning_container .learning_title i {
-  margin-right: 15px;
+  position: relative;
+  top: 8px;
+  right: 10px;
 }
 .habilidades_container .learning_container .learning_item {
   display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  min-width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
   list-style-type: none;
   padding: 1.5rem;
   text-align: center;
@@ -102,25 +126,107 @@
   border-color: var(--txt1);
 }
 .habilidades_container .learning_container .learning_item i {
-  width: 100%;
-  margin-right: 15px;
+  position: relative;
+  left: 5%;
+  width: -moz-fit-content;
+  width: fit-content;
   color: var(--txt1);
   font-size: 1.5rem;
   transform: translateY(4px);
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.habilidades_container .learning_container h5 {
+.habilidades_container .learning_container .learning_item h5 {
+  position: relative;
+  right: 5%;
   color: var(--txt1);
   font-size: 1.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .habilidades_container .learning_container h3 {
   font-size: 3rem;
+  color: var(--txt1);
+  height: -moz-min-content;
+  height: min-content;
 }
 .habilidades_container .learning_container .learning_item:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 .habilidades_container .learning_container .learning_item:nth-child(3) {
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
 }
 .habilidades_container .learning_container .learning_item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.habilidades_container .learning_container .learning_item:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.habilidades_container .learning_container .learning_item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.habilidades_container .learning_container .learning_item:nth-child(7) {
   transition-delay: 0.6s;
+}
+.habilidades_container .learning_container .learning_item:nth-child(8) {
+  transition-delay: 0.7s;
+}
+.habilidades_container .learning_container .learning_item:nth-child(9) {
+  transition-delay: 0.8s;
+}
+
+@media (max-width: 1100px) {
+  .habilidades_container h2 {
+    font-size: 2.5rem;
+  }
+  .habilidades_container .skills_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .habilidades_container .skills_container .frontend_container {
+    width: 100%;
+  }
+  .habilidades_container .skills_container .frontend_container .front_end_title {
+    font-size: 2rem;
+  }
+  .habilidades_container .skills_container .frontend_container .front_end_title i {
+    position: relative;
+    top: 8px;
+    right: 8px;
+  }
+  .habilidades_container .skills_container .frontend_container .front_end_item {
+    max-width: 45%;
+  }
+  .habilidades_container .skills_container .frontend_container .front_end_item i {
+    left: 0;
+    font-size: 1.25rem;
+  }
+  .habilidades_container .skills_container .frontend_container .front_end_item h5 {
+    right: 0;
+    font-size: 1.25rem;
+  }
+  .habilidades_container .skills_container .learning_container {
+    width: 100%;
+  }
+  .habilidades_container .skills_container .learning_container .learning_title {
+    font-size: 2rem;
+  }
+  .habilidades_container .skills_container .learning_container .learning_title h3 {
+    font-size: 2rem !important;
+  }
+  .habilidades_container .skills_container .learning_container .learning_title i {
+    position: relative;
+    right: 8px;
+  }
+  .habilidades_container .skills_container .learning_container .learning_item {
+    max-width: 45%;
+  }
+  .habilidades_container .skills_container .learning_container .learning_item i {
+    left: 0;
+    font-size: 1.25rem;
+  }
+  .habilidades_container .skills_container .learning_container .learning_item h5 {
+    right: 0;
+    font-size: 1.25rem;
+  }
 }/*# sourceMappingURL=habilidades.css.map */

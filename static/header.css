@@ -57,8 +57,16 @@ header .navbar .hamburguer .bar {
 }
 
 @media (max-width: 768px) {
+  .profile_picture {
+    position: relative;
+    width: 7vh !important;
+    height: 7vh !important;
+    padding: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .hamburguer {
-    display: block;
+    display: block !important;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -72,7 +80,7 @@ header .navbar .hamburguer .bar {
   .navbar_menu {
     position: fixed;
     left: -100%;
-    top: 10vh;
+    top: 8vh;
     gap: 0;
     background-color: var(--bg1);
     text-align: center;
@@ -84,10 +92,15 @@ header .navbar .hamburguer .bar {
     margin: 15px 0;
   }
   .navbar_li {
-    margin-bottom: 15px;
+    margin: 7.5px 0;
   }
   .navbar_menu.active {
     left: 0;
     background-color: var(--bg1);
+  }
+}
+@media (max-width: 420px) {
+  .profile_picture {
+    left: -5%;
   }
 }/*# sourceMappingURL=header.css.map */

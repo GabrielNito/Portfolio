@@ -1,7 +1,7 @@
 .cursos {
-  border: solid 1px black;
   width: 100%;
   position: relative;
+  overflow-y: hidden;
 }
 .cursos h2 {
   color: var(--txt1);
@@ -33,6 +33,7 @@
   width: 100%;
   font-family: "Sora", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 .cursos .cursos_container .cursos_obj h5 {
   width: 100%;
@@ -88,6 +89,9 @@
 @media (max-width: 1150px) {
   .cursos {
     overflow-x: hidden;
+  }
+  .cursos h2 {
+    font-size: 3rem;
   }
   .cursos .cursos_container {
     display: grid;

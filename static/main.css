@@ -23,7 +23,10 @@
 html,
 body {
   max-width: 100%;
-  height: auto;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
