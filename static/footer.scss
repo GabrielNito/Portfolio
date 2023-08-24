@@ -139,6 +139,22 @@ footer .redirect .footer_li .footer_a:hover {
 
 @media (max-width: 630px) {
   footer {
+    .footer_pic {
+      display: none;
+    }
+    .contact_container {
+      h2 {
+        text-align: end;
+      }
+      .contact {
+        .contact_obj {
+          justify-content: end;
+        }
+        .contact_obj:nth-child(2) {
+          margin-bottom: 10px;
+        }
+      }
+    }
     .redirect {
       display: none;
     }
