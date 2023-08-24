@@ -1,7 +1,7 @@
 .cursos {
+  border: solid 1px black;
   width: 100%;
   position: relative;
-  overflow-y: hidden;
 }
 .cursos h2 {
   color: var(--txt1);
