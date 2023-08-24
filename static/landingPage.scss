@@ -1,0 +1,166 @@
+.landingPage {
+  height: 90svh;
+  background-color: var(--bg1);
+  display: flex;
+
+  .left {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+    .container {
+      height: 100%;
+      width: 100%;
+      .container-title {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 15rem;
+        .left-name {
+          font-size: 1.75em;
+          margin-bottom: 10px;
+          letter-spacing: 5px;
+          border-right: 5px solid black;
+          width: 340px;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: typing 1s steps(20),
+            cursor 0.4s step-end infinite alternate;
+        }
+
+        .left-role {
+          font-family: "Sora", sans-serif;
+          color: var(--txt1);
+          font-size: 3rem;
+          margin: 0 5rem 10px 0;
+        }
+
+        .left-description {
+          margin-right: 5rem;
+          text-align: justify;
+          font-size: 1.25rem;
+          font-weight: 300;
+
+          transition-delay: 0.2s;
+
+          mark {
+            // background-color: var(--color1);
+            // opacity: 1;
+            animation: highlight 1.5s ease;
+          }
+        }
+
+        .dados_pessoais_link {
+          color: var(--color1);
+        }
+      }
+    }
+  }
+
+  .right {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+    img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      height: 100%;
+      width: 100%;
+      animation: apareso 1s ease;
+    }
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes apareso {
+  from {
+    top: 70%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+  33% {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .landingPage {
+    overflow-x: hidden;
+
+    .left {
+      width: 100% !important;
+      background-image: url("../img/landing-page-background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      .container {
+        overflow-y: hidden;
+        position: relative;
+        height: 50%;
+        width: 100%;
+        top: 50%;
+        background-color: var(--bg1);
+        .container-title {
+          position: relative;
+          top: 30%;
+          margin-left: 2.5rem !important;
+
+          .left-name {
+            width: 250px !important;
+            display: block;
+            border: none !important;
+            font-size: 1rem !important;
+            animation: none !important;
+          }
+
+          .left-role {
+            font-size: 1.5rem !important;
+            margin-right: 2.5rem !important;
+          }
+
+          .left-description {
+            margin-right: 2.5rem !important;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: none;
+    }
+  }
+}
+@media (max-width: 623px) {
+  .landingPage {
+    .left {
+      .container {
+        height: 50%;
+        overflow-y: hidden;
+        .container-title {
+          top: 50%;
+        }
+      }
+    }
+  }
+}

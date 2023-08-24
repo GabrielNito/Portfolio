@@ -1,0 +1,60 @@
+.faculdade {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+
+  justify-content: center;
+
+  .faculdade_container {
+    width: 100%;
+    h2 {
+      margin-top: 10vh;
+      font-size: 4rem;
+      width: 100%;
+      text-align: center;
+    }
+    h3 {
+      margin: 20px 0;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+    }
+    img {
+      height: 20vh;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border: solid 1px black;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .faculdade {
+    overflow-x: hidden;
+
+    .faculdade_container {
+      h2 {
+        font-size: 3rem;
+      }
+      img {
+        height: 15vh;
+      }
+    }
+  }
+}
+@media (max-width: 712px) {
+  .faculdade {
+    overflow-x: hidden;
+
+    .faculdade_container {
+      h2 {
+        font-size: 3rem;
+      }
+      h3 {
+        padding: 0 5px;
+      }
+    }
+  }
+}

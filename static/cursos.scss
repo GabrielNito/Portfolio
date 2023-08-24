@@ -1,0 +1,133 @@
+.cursos {
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+
+  h2 {
+    color: var(--txt1);
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+  }
+
+  .cursos_container {
+    display: flex;
+    margin: 0 5rem;
+    gap: 15px;
+    width: auto;
+    justify-content: space-evenly;
+
+    .cursos_obj {
+      padding: 1.5rem;
+      flex: 1;
+      border-radius: 2rem;
+      border: 0.1rem solid;
+      border-color: var(--txt1);
+      text-align: center;
+
+      width: fit-content;
+      height: auto;
+
+      h3 {
+        width: 100%;
+        font-family: "Sora", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      h5 {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 1.3rem;
+        color: var(--txt2);
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+
+      p {
+        color: var(--txt2);
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      .cursos_img {
+        scale: 1 / 1;
+        position: relative;
+        margin: 10px;
+        width: 10rem;
+        height: 10rem;
+        padding: 10px;
+        object-fit: contain;
+        background-color: white;
+        border-radius: 2.5vh;
+      }
+      i {
+        margin-right: 15px;
+      }
+    }
+
+    .cursos_obj:nth-child(1),
+    .cursos_obj:nth-child(2),
+    .cursos_obj:nth-child(3),
+    .cursos_obj:nth-child(4) {
+      transition-delay: 0.2s;
+    }
+
+    .imgLink {
+      cursor: pointer;
+      margin: 10px;
+      width: 20vh;
+      height: 20vh;
+      padding: 10px;
+      position: absolute;
+      left: 22.25%;
+      border-radius: 2.5vh;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  // something's in the way
+  .cursos {
+    overflow-x: hidden;
+    h2 {
+      font-size: 3rem;
+    }
+    .cursos_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .cursos_obj {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 712px) {
+  // something's in the way²
+  .cursos {
+    overflow-x: hidden;
+    .cursos_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .cursos_obj {
+        width: 100%;
+        min-height: 300px;
+
+        img {
+          display: none;
+        }
+
+        i {
+          display: none;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
