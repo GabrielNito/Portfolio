@@ -107,12 +107,12 @@ footer .redirect .footer_li .footer_a:hover {
 
 @media (max-width: 1100px) {
   footer {
+    h2 {
+      font-size: 1.5rem;
+    }
     .footer_pic {
       width: 5vh;
       height: 5vh;
-    }
-    h2 {
-      font-size: 1.5rem;
     }
     .contact_container {
       width: fit-content;
@@ -139,11 +139,17 @@ footer .redirect .footer_li .footer_a:hover {
 
 @media (max-width: 630px) {
   footer {
+    h2 {
+      width: 40%;
+      text-align: start;
+    }
     .footer_pic {
       display: none;
     }
     .contact_container {
+      width: 40%;
       h2 {
+        width: 100%;
         text-align: end;
       }
       .contact {
