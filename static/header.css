@@ -5,7 +5,6 @@ header {
   background: var(--bg1);
   z-index: 20;
 }
-
 header .navbar {
   width: 100%;
   min-height: 70px;
@@ -14,42 +13,35 @@ header .navbar {
   justify-content: space-between;
   padding: 0 35px;
 }
-
 header .navbar .profile_picture {
   width: 10vh;
   height: 10vh;
   padding: 10px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
-
 header .navbar .profile_picture .cls-1 {
   fill: black;
 }
-
 header .navbar .navbar_menu {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-
 header .navbar .navbar_menu .navbar_li {
   list-style: none;
   text-align: center;
   font-size: 1.25rem;
 }
-
 header .navbar .navbar_menu .navbar_a {
   color: var(--txt1);
   text-decoration: none;
   transition: 0.3s ease;
 }
-
 header .navbar .hamburguer {
   display: none;
   cursor: pointer;
 }
-
 header .navbar .hamburguer .bar {
   display: block;
   width: 30px;
@@ -65,22 +57,26 @@ header .navbar .hamburguer .bar {
 }
 
 @media (max-width: 768px) {
+  .profile_picture {
+    position: relative;
+    width: 7.5vh !important;
+    height: 7.5vh !important;
+    padding: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .hamburguer {
     display: block !important;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(8px) rotate(-45deg);
   }
-
   .navbar_menu {
     position: fixed;
     left: -100%;
@@ -92,25 +88,19 @@ header .navbar .hamburguer .bar {
     width: 100svw;
     transition: 0.3s;
   }
-
   .navbar_a {
     margin: 15px 0;
   }
-
   .navbar_li {
     margin: 7.5px 0;
   }
-
   .navbar_menu.active {
     left: 0;
     background-color: var(--bg1);
   }
 }
-
 @media (max-width: 420px) {
   .profile_picture {
     left: -5%;
   }
-}
-
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
