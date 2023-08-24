@@ -3,6 +3,8 @@ node_modules
 vite.config.js
 server.js
 
+src/main.js
+
 static/cursos.scss
 static/cursos.css.map
 static/dadosPessoais.scss
