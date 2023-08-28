@@ -19,10 +19,11 @@
         transform: translateY(-50%);
         margin-left: 15rem;
         .left-name {
+          color: var(--txt1);
           font-size: 1.75em;
           margin-bottom: 10px;
           letter-spacing: 5px;
-          border-right: 5px solid black;
+          border-right: 5px solid var(--txt1);
           width: 340px;
           white-space: nowrap;
           overflow: hidden;

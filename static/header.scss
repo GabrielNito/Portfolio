@@ -17,8 +17,8 @@ header {
       height: 10vh;
       padding: 10px;
       object-fit: contain;
-      .cls-1 {
-        fill: black;
+      .svg {
+        fill: var(--txt1);
       }
     }
     .navbar_menu {
