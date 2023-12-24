@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "dev": "vite",
-        "build": "webpack"
+        "build": "webpack",
+        "dev": "vite"
     },
     "author": "",
     "license": "ISC",
