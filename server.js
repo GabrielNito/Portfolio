@@ -1,0 +1,11 @@
+import './static/courses.scss'
+import './static/educationalBackground.scss'
+import './static/footer.scss'
+import './static/global.scss'
+import './static/header.scss'
+import './static/landingPage.scss'
+import './static/main.scss'
+import './static/skills.scss'
+
+import './src/header.js'
+import './src/transitionHidden.js'

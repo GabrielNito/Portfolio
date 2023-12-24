@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "dev": "vite"
+        "dev": "vite",
+        "build": "webpack",
+        "server": "webpack serve"
     },
     "author": "",
     "license": "ISC",
