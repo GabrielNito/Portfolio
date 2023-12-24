@@ -4,19 +4,21 @@
     "main": "main.js",
     "scripts": {
         "build": "webpack",
-        "server": "webpack serve"
+        "server": "webpack serve",
+        "dev": "vite"
     },
     "author": "",
     "license": "ISC",
-    "devDependencies": {
+    "keywords": [],
+    "description": "",
+    "dependencies": {
         "css-loader": "^6.8.1",
         "dotenv": "^16.3.1",
         "sass-loader": "^13.3.2",
         "style-loader": "^3.3.3",
+        "vite": "^5.0.10",
         "webpack": "^5.89.0",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^4.15.1"
-    },
-    "keywords": [],
-    "description": ""
+    }
 }
