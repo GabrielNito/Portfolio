@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st2{fill:none;stroke:#c6d0f5;stroke-width:60;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="Logo">
+	<path class="st2" d="M875,500c0,25.7-2.6,50.8-7.5,75c-120.3-33-243.9-49.5-367.5-49.5S252.8,542,132.5,575
+		c-4.9-24.2-7.5-49.3-7.5-75c0-207.1,167.9-375,375-375S875,292.9,875,500z"/>
+	<path class="st2" d="M867.5,575c-15.9,78.3-56.1,147.7-112.5,200c-84.2-16.8-169.6-25.2-255-25.2s-170.8,8.4-255,25.2
+		c-56.4-52.3-96.6-121.7-112.5-200c120.3-33,243.9-49.5,367.5-49.5S747.2,542,867.5,575z"/>
+	<path class="st2" d="M755,775C688,837.1,598.5,875,500,875s-188-37.9-255-100c84.2-16.8,169.6-25.2,255-25.2S670.8,758.2,755,775z"
+		/>
+</g>
+</svg>
