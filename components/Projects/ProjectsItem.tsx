@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { Cormorant_Garamond } from "next/font/google";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import { GitHubLogoIcon, VercelLogoIcon } from "@radix-ui/react-icons";
