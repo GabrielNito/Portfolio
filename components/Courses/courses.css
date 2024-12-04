@@ -1,0 +1,10 @@
+@media (max-height: 720px) {
+    .courses-pc {
+        display: none;
+    }
+
+    .courses-mobile {
+        display: block;
+        width: 50%;
+    }
+}

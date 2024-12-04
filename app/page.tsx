@@ -23,7 +23,7 @@ export default function Page() {
       <div className="h-[50vh]">
         <Experience />
       </div>
-      <div className="h-[75vh]">
+      <div className="courses-wrapper h-screen lg:h-[75svh]">
         <Courses />
         <CoursesMobile />
       </div>

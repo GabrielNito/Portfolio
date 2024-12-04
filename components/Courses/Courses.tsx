@@ -4,6 +4,7 @@ import { Cormorant_Garamond } from "next/font/google";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import CoursesCard from "./CoursesCard";
+import "./courses.css";
 
 const cormorant = Cormorant_Garamond({
   weight: "700",
@@ -74,7 +75,7 @@ export default function Courses({ variant }: CoursesProps) {
   return (
     <motion.div
       id="courses"
-      className="max-lg:hidden w-1/2 container mx-auto p-4"
+      className="courses-pc max-lg:hidden w-1/2 container mx-auto p-4"
       ref={ref}
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 10 }}

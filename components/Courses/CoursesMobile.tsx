@@ -12,6 +12,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import "./courses.css";
 
 const cormorant = Cormorant_Garamond({
   weight: "700",
@@ -82,7 +83,7 @@ export default function CoursesMobile({ variant }: CoursesMobileProps) {
   return (
     <motion.div
       id="courses"
-      className="max-lg:mt-20 lg:hidden w-full container mx-auto p-4 px-8"
+      className="courses-mobile max-lg:mt-20 lg:hidden w-full container mx-auto p-4 px-8 min-h-[100svh] flex flex-col justify-end"
       ref={ref}
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 10 }}

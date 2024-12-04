@@ -23,7 +23,7 @@ export default function TechStackCard({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 10 }}
       transition={{
-        delay: index * 0.15 + 0.3,
+        delay: index * 0.1 + 0.3,
         ease: "easeInOut",
         duration: 0.3,
       }}
