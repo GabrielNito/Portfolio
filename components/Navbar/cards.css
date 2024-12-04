@@ -1,0 +1,7 @@
+#cards:hover>.card::after {
+    opacity: 1;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
