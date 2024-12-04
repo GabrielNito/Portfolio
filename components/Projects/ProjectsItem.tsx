@@ -33,12 +33,6 @@ export default function ProjectsItem({
 }: ProjectsItemProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [textHovered, setTextHovered] = useState(false);
-
-  const highlightVariants = {
-    initial: { width: "0%" },
-    animate: { width: "100%", transition: { duration: 0.3 } },
-  };
 
   return (
     <motion.div
@@ -99,8 +93,6 @@ export default function ProjectsItem({
         initial={{ opacity: 0, x: -25 }}
         animate={{ opacity: isInView ? 1 : 0, x: isInView ? 0 : -25 }}
         transition={{ delay: 0.45 + delay, ease: "easeInOut", duration: 0.3 }}
-        onHoverStart={() => setTextHovered(true)}
-        onHoverEnd={() => setTextHovered(false)}
       >
         <motion.p>{description}</motion.p>
         <motion.div

@@ -108,9 +108,9 @@ export default function CoursesMobile({ variant }: CoursesMobileProps) {
 
       <div className="flex flex-col gap-4 bg-muted p-4 rounded-2xl mt-4 mx-4">
         {variant === "pt"
-          ? texts.pt.courses.map((course) => {
+          ? texts.pt.courses.map((course, index) => {
               return (
-                <Card className="p-4 h-32 bg-background relative">
+                <Card key={index} className="p-4 h-32 bg-background relative">
                   <CardTitle>{course.title}</CardTitle>
                   <CardDescription className="mt-1 flex gap-1 items-center">
                     <MapPin size={16} />
@@ -137,9 +137,9 @@ export default function CoursesMobile({ variant }: CoursesMobileProps) {
                 </Card>
               );
             })
-          : texts.en.courses.map((course) => {
+          : texts.en.courses.map((course, index) => {
               return (
-                <Card className="p-4 h-32 bg-background relative">
+                <Card key={index} className="p-4 h-32 bg-background relative">
                   <CardTitle>{course.title}</CardTitle>
                   <CardDescription className="mt-1 flex gap-1 items-center">
                     <MapPin size={16} />
