@@ -1,17 +1,8 @@
 "use client";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
-import { Calendar, Clock, File, MapPin } from "lucide-react";
 import { Cormorant_Garamond } from "next/font/google";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Button } from "../ui/button";
-import Link from "next/link";
 import CoursesCard from "./CoursesCard";
 
 const cormorant = Cormorant_Garamond({

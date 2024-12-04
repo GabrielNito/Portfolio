@@ -1,14 +1,7 @@
 "use client";
 
 import { Cormorant_Garamond } from "next/font/google";
-import {
-  Home,
-  Folder,
-  User,
-  Mail,
-  Menu,
-  BriefcaseBusiness,
-} from "lucide-react";
+import { Home, Folder, Mail, Menu, BriefcaseBusiness } from "lucide-react";
 import "./cards.css";
 import { Button } from "../ui/button";
 import { useState } from "react";

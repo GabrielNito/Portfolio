@@ -18,19 +18,6 @@ import { Cormorant_Garamond } from "next/font/google";
 
 const cormorant = Cormorant_Garamond({ weight: "700", subsets: ["latin"] });
 
-const languages = [
-  {
-    text: "English",
-    icon: "EN",
-    link: "/",
-  },
-  {
-    text: "Portuguese",
-    icon: "BR",
-    link: "/pt",
-  },
-];
-
 interface NavbarLanguageProps {
   mobile?: boolean;
   variant?: "en" | "pt";

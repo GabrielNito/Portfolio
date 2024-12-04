@@ -5,7 +5,7 @@ import { Calendar } from "lucide-react";
 
 interface ExperienceCardProps {
   isInView: boolean;
-  variant: "en" | "pt";
+  variant?: "en" | "pt";
 }
 
 const texts = {

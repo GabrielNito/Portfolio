@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { Cormorant_Garamond } from "next/font/google";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import ProjectsItem from "./ProjectsItem";
 
 const cormorant = Cormorant_Garamond({

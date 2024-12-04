@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Cormorant_Garamond } from "next/font/google";
-import { Home, Folder, User, Mail, BriefcaseBusiness } from "lucide-react";
+import { Home, Folder, Mail, BriefcaseBusiness } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import NavbarPC from "./NavbarPC";
 import "./cards.css";

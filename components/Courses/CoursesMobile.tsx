@@ -6,7 +6,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import { Calendar, Clock, File, MapPin } from "lucide-react";
+import { Calendar, File, MapPin } from "lucide-react";
 import { Cormorant_Garamond } from "next/font/google";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
