@@ -1,7 +1,14 @@
 "use client";
 
 import { Cormorant_Garamond } from "next/font/google";
-import { Home, Folder, Mail, Menu, BriefcaseBusiness } from "lucide-react";
+import {
+  Home,
+  Folder,
+  Mail,
+  Menu,
+  BriefcaseBusiness,
+  Wrench,
+} from "lucide-react";
 import "./cards.css";
 import { Button } from "../ui/button";
 import { useState } from "react";
@@ -13,16 +20,18 @@ const cormorant = Cormorant_Garamond({ weight: "700", subsets: ["latin"] });
 
 const navItems = {
   en: [
-    { name: "Home", href: "/", icon: Home },
+    { name: "Home", href: "#home", icon: Home },
     { name: "Projects", href: "#projects", icon: Folder },
     { name: "Experience", href: "#experience", icon: BriefcaseBusiness },
     { name: "Courses", href: "#courses", icon: Mail },
+    { name: "Tech Stack", href: "#stack", icon: Mail },
   ],
   pt: [
-    { name: "Home", href: "/", icon: Home },
+    { name: "Home", href: "#home", icon: Home },
     { name: "Projetos", href: "#projects", icon: Folder },
     { name: "Experiência", href: "#experience", icon: BriefcaseBusiness },
     { name: "Cursos", href: "#courses", icon: Mail },
+    { name: "Tecnologias", href: "#stack", icon: Wrench },
   ],
 };
 
@@ -38,7 +47,7 @@ export default function NavbarMobile({ variant }: NavbarMobileProps) {
       <motion.div
         layout
         initial={{ height: "3rem" }}
-        animate={{ height: navbarOpen ? "13rem" : "3rem" }}
+        animate={{ height: navbarOpen ? "16rem" : "3rem" }}
         transition={{
           layout: { duration: 0.3, ease: "easeInOut" },
         }}

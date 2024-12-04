@@ -6,6 +6,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import NavbarMobile from "@/components/Navbar/NavbarMobile";
 import CoursesMobile from "@/components/Courses/CoursesMobile";
 import Home from "@/components/Home/Home";
+import TechStack from "@/components/TechStack/TechStack";
 
 export default function Page() {
   return (
@@ -25,6 +26,9 @@ export default function Page() {
       <div className="h-[75vh]">
         <Courses variant="pt" />
         <CoursesMobile variant="pt" />
+      </div>
+      <div className="h-[75vh]">
+        <TechStack variant="pt" />
       </div>
       <ScrollToTop />
     </div>

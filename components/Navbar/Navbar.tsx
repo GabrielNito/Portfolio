@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Cormorant_Garamond } from "next/font/google";
-import { Home, Folder, Mail, BriefcaseBusiness } from "lucide-react";
+import { Home, Folder, Mail, BriefcaseBusiness, Wrench } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import NavbarPC from "./NavbarPC";
 import "./cards.css";
@@ -15,20 +15,42 @@ const navItems = {
     { name: "Projects", href: "#projects", icon: Folder },
     { name: "Experience", href: "#experience", icon: BriefcaseBusiness },
     { name: "Courses", href: "#courses", icon: Mail },
+    { name: "Tech Stack", href: "#stack", icon: Mail },
   ],
   pt: [
     { name: "Home", href: "#home", icon: Home },
     { name: "Projetos", href: "#projects", icon: Folder },
     { name: "Experiência", href: "#experience", icon: BriefcaseBusiness },
     { name: "Cursos", href: "#courses", icon: Mail },
+    { name: "Tecnologias", href: "#stack", icon: Wrench },
   ],
 };
 
 const options = [
-  ["opacity-100", "opacity-75", "opacity-75", "opacity-75"],
-  ["opacity-75 !-left-4", "opacity-100", "opacity-75", "opacity-75"],
-  ["opacity-75 !-left-4", "opacity-75 !-left-4", "opacity-100", "opacity-75"],
+  ["opacity-100", "opacity-75", "opacity-75", "opacity-75", "opacity-75"],
   [
+    "opacity-75 !-left-4",
+    "opacity-100",
+    "opacity-75",
+    "opacity-75",
+    "opacity-75",
+  ],
+  [
+    "opacity-75 !-left-4",
+    "opacity-75 !-left-4",
+    "opacity-100",
+    "opacity-75",
+    "opacity-75",
+  ],
+  [
+    "opacity-75 !-left-4",
+    "opacity-75 !-left-4",
+    "opacity-75 !-left-4",
+    "opacity-100",
+    "opacity-75",
+  ],
+  [
+    "opacity-75 !-left-4",
     "opacity-75 !-left-4",
     "opacity-75 !-left-4",
     "opacity-75 !-left-4",
@@ -43,7 +65,7 @@ interface NavbarProps {
 }
 
 export default function Navbar({ variant }: NavbarProps) {
-  const [states, setStates] = useState(options[4]);
+  const [states, setStates] = useState(options[5]);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [shouldShow, setShouldShow] = useState(true);
   const ref = useRef(null);
@@ -108,8 +130,8 @@ export default function Navbar({ variant }: NavbarProps) {
       >
         <motion.div className="card rounded-lg dark:bg-[#303030] bg-muted flex h-12 relative max-md:w-[calc(100vw-2rem)] w-1/2 after:bg-radial-black-600 before:bg-radial-black-800 dark:after:bg-radial-white-600 dark:before:bg-radial-white-800 before:pointer-events-none before:opacity-0 before:transition-opacity before:duration-500 before:content-[''] before:h-full before:w-full before:absolute before:rounded-[inherit] before:left-0 before:top-0 before:z-[3] after:opacity-0 after:transition-opacity after:duration-500 after:content-[''] after:h-full after:w-full after:absolute after:rounded-[inherit] after:left-0 after:top-0 after:z-[1] hover:before:opacity-100">
           <motion.div
-            onHoverStart={() => setStates(options[5])}
-            onHoverEnd={() => setStates(options[4])}
+            onHoverStart={() => setStates(options[6])}
+            onHoverEnd={() => setStates(options[5])}
             className="card-content bg-background flex items-center absolute z-[2] rounded-[7px] inset-px overflow-hidden"
           >
             <div className="p-1 pl-4 w-full flex justify-between relative z-[5]">
